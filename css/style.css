@@ -1,0 +1,109 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "맑은 고딕", sans-serif;
+    font-size: 18px;
+    background: #fff;
+    color: #222328;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222328;
+}
+
+
+header {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header > h1 {
+    position: absolute;
+    left: 0; top: 30px;
+}
+
+#gnb {
+    /* outline: 1px solid red; */
+    position: absolute;
+    right: 20px; top: 35px;
+}
+
+/* 1단계 메뉴 */
+#gnb > ul > li {
+    float: left;
+    width: 160px;
+    text-align: center;
+}
+
+#gnb > ul > li > a {
+    /* outline: 1px solid green; */
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+gnb .depth2.show {
+    padding-top: 40px;   
+    /* outline: 1px solid blue; */
+    background: #efefef;
+    height: 200px;
+}
+
+
+
+#gnb > ul li:hover {
+    background: #fff;
+}
+
+/* 2단계 메뉴 */
+/* 보이지 않음(기본) - mouseout */
+#gnb .depth2 {
+    padding-top: 40px;   
+    /* outline: 1px solid blue; */
+    background: #efefef;
+    padding: 0;
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s; /* 트랜지션 */
+    overflow: hidden;
+}
+
+/* hover시 (보이기) - mouseover */
+#gnb .depth2.show {
+    padding-top: 40px;   
+    /* outline: 1px solid blue; */
+    background: #efefef;
+    height: 200px;
+    opacity: 1;
+}
+
+#gnb .depth2 > li > a {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
