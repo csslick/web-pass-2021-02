@@ -36,3 +36,30 @@ $(function(){
     }, duration);
     
 });
+
+/* tab menu */
+$(function(){
+   $('.tab_group a').first().on('click', function(){
+       /* 기존 콘텐츠 제거 */
+       $('.tab_content').removeClass('show');
+       /* 현재 콘틴츠 표시 */
+       $('#notice').addClass('show');
+   });
+    
+   $('.tab_group a').last().on('click', function(){
+       /* 기존 콘텐츠 제거 */
+       $('.tab_content').removeClass('show');
+       /* 현재 콘틴츠 표시 */
+       $('#gallery').addClass('show');
+   });    
+    
+});
+
+
+
+
+
+
+
+
+

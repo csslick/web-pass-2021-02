@@ -109,8 +109,54 @@ header > h1 {
     display: block;
 }
 
+#contents {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
+#contents > article {
+    width: 400px;
+    float: left;
+    padding: 10px;
+}
 
+#contents .banner1 img,
+#contents .banner2 img{
+    width: 100%;
+}
+
+#contents .tab_menu .tab_group {
+    overflow: hidden;
+}
+#contents .tab_menu .tab_group a{
+    display: block;
+    width: 50%;
+    background: #ccc;
+    float: left;
+    text-align: center;
+    padding: 5px;
+}
+
+#notice { 
+    display: none;
+/*    background: #ff0;*/
+    padding: 20px;
+}
+#notice.show {
+    display: block;
+}
+#notice ul li {
+    margin-bottom: 5px;
+}
+
+#gallery {
+    display: none;
+    padding: 20px;
+}
+#gallery.show {
+    display: block;
+}
 
 
 
